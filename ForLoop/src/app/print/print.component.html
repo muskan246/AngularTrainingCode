@@ -1,0 +1,15 @@
+<h2>EMPLOYEE DETAILS</h2>
+<table style="width:40%">
+    <tr>
+        <th>ID</th>
+        <th>NAME</th>
+        <th>SALARY</th>
+        <th>DEPATMENT</th>
+    </tr>
+    <tr *ngFor="let item of employees ">
+        <td>{{item.ID}}</td>
+        <td>{{item.Name}}</td>
+        <td>{{item.Salary}}</td>
+        <td>{{item.Dept}}</td>
+    </tr>
+</table>
