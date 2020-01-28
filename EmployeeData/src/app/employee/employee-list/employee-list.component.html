@@ -1,0 +1,22 @@
+<div *ngIf="record.length > 0">
+    <table mat-table id="todo">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Salary</th>
+                <th>Department</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let i of record">
+                <td>{{i.id}}</td>
+                <td>{{i.name}}</td>
+                <td>{{i.salary}}</td>
+                <td>{{i.dept}}</td>
+                <td><button>UPDATE</button> <button>DELETE</button> </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
