@@ -2,19 +2,24 @@
     <h3>Employee Data</h3>
     <form>
         <label>ID</label>
+        <br>
         <input type="text" name="id" placeholder="Enter your ID" [(ngModel)]="enteredId">
-
+        <br>
         <label>NAME</label>
+        <br>
         <input type="text" name="name" placeholder="Enter your Name" [(ngModel)]="enteredName">
-
+        <br>
         <label>SALARY</label>
+        <br>
         <input type="text" name="salary" placeholder="Enter your Salary" [(ngModel)]="enteredSalary">
-
+        <br>
         <label>DEPARTMENT</label>
+        <br>
         <input type="text" name="dept" placeholder="Enter your Department" [(ngModel)]="enteredDept">
-        <div style="text-align:center">
-            <button (click)="onAddEmployee()">ADD EMPLOYEE </button>
-        </div>
+        <br>
+
+        <button (click)="onAddEmployee()">ADD EMPLOYEE </button>
+
 
     </form>
 </div>

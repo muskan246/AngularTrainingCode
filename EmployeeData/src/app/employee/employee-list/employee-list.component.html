@@ -10,12 +10,12 @@
             </tr>
         </thead>
         <tbody>
-            <tr *ngFor="let i of record">
+            <tr *ngFor="let i of record ; index as j">
                 <td>{{i.id}}</td>
                 <td>{{i.name}}</td>
                 <td>{{i.salary}}</td>
                 <td>{{i.dept}}</td>
-                <td><button>UPDATE</button> <button>DELETE</button> </td>
+                <td><button>UPDATE</button> <button (click)="onDeleteEmployee(j)">DELETE</button> </td>
             </tr>
         </tbody>
     </table>
